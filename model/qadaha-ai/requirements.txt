@@ -2,7 +2,7 @@ fastapi
 uvicorn
 pydantic
 pandas
-scikit-learn
-shap
-joblib
 numpy
+scikit-learn
+joblib
+shap>=0.48.0
