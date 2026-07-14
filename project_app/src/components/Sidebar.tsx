@@ -31,7 +31,7 @@ export function Sidebar() {
       <div className="w-full mb-10 px-2 flex justify-start">
         <img
           alt="Logo"
-          className="h-auto max-h-20 w-full object-contain object-right"
+          className="h-auto max-h-20 w-full object-contain object-center"
           src={logo}
         />
       </div>

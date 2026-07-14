@@ -104,7 +104,7 @@ export default function CashFlow() {
               <span className="material-symbols-outlined text-outline">more_vert</span>
             </div>
             <p className="text-caption text-on-surface-variant opacity-80 mb-6">متوسط الرصيد المتبقي نهاية الشهر</p>
-            <div className="text-[36px] font-bold mb-2 text-primary flex items-baseline gap-1" dir="ltr">
+            <div className="text-[36px] font-bold mb-2 text-primary flex items-baseline gap-1" dir="rtl">
               <span>١٢,٤٥٠</span>
               <span className="text-lg font-normal text-on-surface-variant">ر.س</span>
             </div>

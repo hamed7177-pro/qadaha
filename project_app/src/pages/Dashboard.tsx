@@ -34,7 +34,7 @@ export default function Dashboard() {
               <span className="material-symbols-outlined text-primary">payments</span>
             </div>
             <div className="flex items-baseline justify-between w-full">
-              <div className="flex items-baseline gap-1" dir="ltr">
+              <div className="flex items-baseline gap-1" dir="rtl">
                 <span className="font-display-lg text-[32px] text-primary font-bold">18,500</span>
                 <span className="font-caption text-caption text-on-surface-variant">ر.س</span>
               </div>
@@ -50,7 +50,7 @@ export default function Dashboard() {
               <span className="font-label-sm text-label-sm text-on-surface-variant">المصاريف الشهرية</span>
               <span className="material-symbols-outlined text-secondary">shopping_cart</span>
             </div>
-            <div className="flex items-baseline gap-1" dir="ltr">
+            <div className="flex items-baseline gap-1" dir="rtl">
               <span className="font-display-lg text-[32px] text-primary font-bold">7,200</span>
               <span className="font-caption text-caption text-on-surface-variant">ر.س</span>
             </div>
@@ -62,7 +62,7 @@ export default function Dashboard() {
               <span className="font-label-sm text-label-sm text-on-surface-variant">الالتزامات المتكررة</span>
               <span className="material-symbols-outlined text-tertiary">account_balance_wallet</span>
             </div>
-            <div className="flex items-baseline gap-1" dir="ltr">
+            <div className="flex items-baseline gap-1" dir="rtl">
               <span className="font-display-lg text-[32px] text-primary font-bold">6,100</span>
               <span className="font-caption text-caption text-on-surface-variant">ر.س</span>
             </div>
@@ -75,7 +75,7 @@ export default function Dashboard() {
               <span className="material-symbols-outlined text-secondary-container">savings</span>
             </div>
             <div className="flex items-baseline justify-between w-full">
-              <div className="flex items-baseline gap-1" dir="ltr">
+              <div className="flex items-baseline gap-1" dir="rtl">
                 <span className="font-display-lg text-[32px] text-secondary-container font-bold">5,200</span>
                 <span className="font-caption text-caption text-on-surface-variant">ر.س</span>
               </div>
