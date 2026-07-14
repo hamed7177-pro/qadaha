@@ -114,3 +114,46 @@ body {
   background-color: var(--color-outline-variant);
   border-radius: 10px;
 }
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(239, 231, 223, 0.5);
+  box-shadow: 0 10px 30px rgba(11, 35, 65, 0.05);
+}
+
+.pattern-bg {
+  background-image: radial-gradient(#0b2341 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.03;
+}
+
+.rtl-select {
+  background-position: left 1rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.toggle-checkbox:checked {
+  right: 1.5rem;
+  border-color: #C96B4B;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #C96B4B;
+}
+
+.toggle-checkbox {
+  right: 0;
+}
