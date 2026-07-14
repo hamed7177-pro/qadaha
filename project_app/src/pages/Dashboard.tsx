@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { 
   TrendingUp, 
   CreditCard, 
@@ -11,8 +12,23 @@ import {
   PieChart,
   CheckCircle2
 } from "lucide-react";
+import { LoadingState } from "../components/ui/LoadingState";
 
 export default function Dashboard() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // محاكاة جلب البيانات من الخادم
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <LoadingState message="جاري تجهيز بيانات لوحة القيادة..." className="mt-20" />;
+  }
+
   return (
     <div className="space-y-gutter pb-8">
       {/* Section 1: Overview Cards */}

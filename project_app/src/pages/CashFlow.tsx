@@ -43,21 +43,21 @@ export default function CashFlow() {
                 <span className="font-label-md text-label-sm text-on-surface-variant">المصاريف</span>
               </div>
             </div>
-            
+
             <div className="h-64 w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={data} margin={{ top: 10, right: 0, left: 0, bottom: 0 }}>
                   <defs>
                     <linearGradient id="colorIncome" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#000d21" stopOpacity={0.2}/>
-                      <stop offset="95%" stopColor="#000d21" stopOpacity={0}/>
+                      <stop offset="5%" stopColor="#000d21" stopOpacity={0.2} />
+                      <stop offset="95%" stopColor="#000d21" stopOpacity={0} />
                     </linearGradient>
                     <linearGradient id="colorExpense" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#994629" stopOpacity={0.2}/>
-                      <stop offset="95%" stopColor="#994629" stopOpacity={0}/>
+                      <stop offset="5%" stopColor="#994629" stopOpacity={0.2} />
+                      <stop offset="95%" stopColor="#994629" stopOpacity={0} />
                     </linearGradient>
                   </defs>
-                  <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#74777e', fontSize: 12}} reversed />
+                  <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#74777e', fontSize: 12 }} reversed />
                   <Tooltip />
                   <CartesianGrid vertical={false} stroke="#e4e2de" strokeDasharray="3 3" />
                   <Area type="monotone" dataKey="income" stroke="#000d21" strokeWidth={3} fillOpacity={1} fill="url(#colorIncome)" />
@@ -80,7 +80,7 @@ export default function CashFlow() {
             <div className="w-full h-16 mt-6">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={data}>
-                   <Line type="monotone" dataKey="income" stroke="#fe9572" strokeWidth={2} dot={false} />
+                  <Line type="monotone" dataKey="income" stroke="#fe9572" strokeWidth={2} dot={false} />
                 </LineChart>
               </ResponsiveContainer>
             </div>
@@ -105,9 +105,9 @@ export default function CashFlow() {
               </div>
               <span className="font-title-lg text-body-md text-primary-container font-bold" dir="ltr">١٢,٠٠٠ ر.س</span>
             </div>
-            
+
             <div className="w-full h-[1px] bg-surface-variant"></div>
-            
+
             <div className="flex items-center justify-between flex-row-reverse">
               <div className="flex items-center gap-3 flex-row-reverse">
                 <div className="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-container">
@@ -120,9 +120,9 @@ export default function CashFlow() {
               </div>
               <span className="font-title-lg text-body-md text-primary-container font-bold" dir="ltr">٣,٥٠٠ ر.س</span>
             </div>
-            
+
             <div className="w-full h-[1px] bg-surface-variant"></div>
-            
+
             <div className="flex items-center justify-between flex-row-reverse">
               <div className="flex items-center gap-3 flex-row-reverse">
                 <div className="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-container">
@@ -155,7 +155,7 @@ export default function CashFlow() {
                 <span className="block text-headline-md font-bold text-primary">١٠٠٪</span>
               </div>
             </div>
-            
+
             <div className="w-full flex flex-col gap-3">
               <div className="flex items-center justify-between w-full flex-row-reverse">
                 <div className="flex items-center gap-2 flex-row-reverse">
@@ -212,7 +212,7 @@ export default function CashFlow() {
                   <Home size={20} />
                 </div>
               </div>
-              
+
               <div className="flex items-center justify-between bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all cursor-pointer flex-row-reverse">
                 <div className="text-right">
                   <p className="text-label-sm text-on-surface-variant">قسط سيارة</p>
@@ -222,7 +222,7 @@ export default function CashFlow() {
                   <Car size={20} />
                 </div>
               </div>
-              
+
               <div className="flex items-center justify-between bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all cursor-pointer flex-row-reverse">
                 <div className="text-right">
                   <p className="text-label-sm text-on-surface-variant">فاتورة كهرباء</p>
@@ -232,7 +232,7 @@ export default function CashFlow() {
                   <Receipt size={20} />
                 </div>
               </div>
-              
+
               <div className="flex items-center justify-between bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all cursor-pointer flex-row-reverse">
                 <div className="text-right">
                   <p className="text-label-sm text-on-surface-variant">اشتراك سحابي</p>
