@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 import { Inbox } from "lucide-react";
 
 interface EmptyStateProps {
-  icon?: React.ReactNode;
+  icon?: ReactNode;
   title: string;
   description?: string;
   action?: {
