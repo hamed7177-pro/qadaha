@@ -1,3 +1,4 @@
+import React from "react";
 import { Inbox } from "lucide-react";
 
 interface EmptyStateProps {
